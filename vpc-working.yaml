@@ -1,5 +1,9 @@
+# Description: Validated AWS VPC CloudFormation Template
+# Revision number: 1
+# Date: 11/05/2025
+
 AWSTemplateFormatVersion: '2010-09-09'
-Description: >
+Description: |
   VPC-garmcb6646 - VPC in us-west-2 with 3 public subnets across 3 AZs.
 
 Parameters:
@@ -112,12 +116,15 @@ Outputs:
   VpcId:
     Description: ID of the created VPC
     Value: !Ref VPC
+
   PublicSubnet1Id:
     Description: Subnet 1 ID
     Value: !Ref PublicSubnet1
+
   PublicSubnet2Id:
     Description: Subnet 2 ID
     Value: !Ref PublicSubnet2
+
   PublicSubnet3Id:
     Description: Subnet 3 ID
     Value: !Ref PublicSubnet3
